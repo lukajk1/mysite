@@ -1,0 +1,27 @@
+var flavorTexts = [
+    "God's in his Heaven / All's right with the world", 
+    "For though we live in the world, we do not wage war as the world does", 
+    "I thought what I'd do was, I'd pretend I was one of those deaf-mutes", 
+    "For the love of money is a root of all kinds of evil",
+    "Knowledge is limited. Imagination encircles the world", 
+    "No one thinks himself a villain", 
+    "Anywhere can be paradise as long as you have the will to live", 
+    "After all, humans are not gods", 
+    "Man fears the darkness, and so he scrapes away at the edges of it with fire", 
+    "Are you afraid that you will lose your identity if others leave you?",
+    "Originality is but old thought made over",
+    "The universe is ours"
+];
+
+var random = Math.floor(Math.random() * flavorTexts.length);
+document.getElementById("flavor-text").innerHTML = flavorTexts[random];
+
+
+console.log($("no-click-images").length)
+if (1){
+    console.log("yes");
+}
+if (0){
+    console.log("ss");
+}
+

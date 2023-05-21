@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+        
+        <link rel="icon" href="/img/favicon.ico" />
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWWVQNHMQJ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-GWWVQNHMQJ');
+        </script>
+        
+        
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <style>
+            .portfolio {
+                display:grid;
+                grid-column-gap: 2.5px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .image-card {
+                display:inline-grid;
+                height: 400px;
+                margin: 2.5px 0 2.5px 0;
+                overflow: hidden;
+            }
+            .image-card img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+                object-position: 50% 10%;
+            }
+            #carousel {
+                background-color: rgba(0, 0, 0, 0.85);
+                width: 100%;
+                height: 100%;
+                display: none;
+                z-index: 1;
+                position: fixed;
+                top:0;
+                left:0;
+                margin:auto;
+                text-align: center;
+            }
+            #carousel a {
+                color:white;
+            }
+            #carousel img{
+                display:block;
+                margin:auto;
+                margin-top: 50px;
+                cursor: default;
+            }
+            #display {
+                height: 80vh;
+                z-index: 5;
+                position: relative;
+            }
+            #carousel li, #carousel p {
+                display: inline;
+                position: relative;
+                z-index: 5;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin:auto;
+                margin-top: 20px;
+            }
+            #close {
+                height: 100vh;
+                width: 100vw;
+                position: fixed;
+                z-index: 1;
+                cursor: pointer;
+            }
+        </style>
+        
+        <script>$(function(){$("#logotype").load("/logotype.html");});</script>
+        
+        <title>ARKVAIN</title>
+    </head>
+    <body>
+        
+        <span class="no-click-images"></span>
+        
+        <div class="container">
+            <div id="logotype"></div>
+            <div class="wrapper">
+
+                
+                <div class="wrap-text">                    
+                    
+                    <div class="spacer"></div>
+
+                    <p><a href="/blog.html">Gallery</a> > <a href="#">Studies & Sketches</a></p><br>
+                    
+                    <span class="portfolio" id="pf">
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/511%20begeron.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/-314.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/502.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/489%20blame.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/-268.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/-267.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/332.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/330.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/17%20long%20pose.png">
+                        </div>
+
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/258%20STUDY%20frazetta.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/315%20sketch%20frazetta.png">
+                        </div>
+
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/14%20sketch.png">
+                        </div>
+
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/STUDY%208.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/7.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/sketch%20268.png">
+                        </div>
+
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/STUDY%209.png">
+                        </div>
+
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/STUDY%20253.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/1.jpg">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/2.png">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/3.jpg">
+                        </div>
+                        
+                        <div class="image-card">
+                            <img src="/extras/img/assorted-sketches/4.jpg">
+                        </div>
+
+                    </span>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p><a href="/blog.html">Gallery</a> > <a href="#">Studies & Sketches</a></p>
+                
+                    <div class="footer"><hr></div>
+                
+            </div>
+            
+        </div>
+        </div>
+        
+            <script src="/js/carousel.js"></script>
+            <div id="carousel">
+                
+                <div id="close" onclick="closeCar()"></div>
+                    <img id="display" src="#">
+                <ul>
+                    <li><a href="#/" id="prev" onclick="prevImg()">prev</a></li>
+                    <li style="color:white;"> / </li>
+                    <li><a href="#/" id="next" onclick="nextImg()">next</a></li>
+                </ul>
+                <p style="color:white;" id="num">1 of 1</p>
+                
+            </div>
+            
+    </body>
+</html>
