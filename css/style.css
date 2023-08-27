@@ -3,7 +3,7 @@ ul {list-style: circle;padding: 0 25px;}
 ol {padding: 0 25px;}
 p {white-space: pre-wrap;} 
 a {color: #404040;}
-a:hover {color: #5e5e5e;}
+a:hover{color:#a54f4f}
 h2 {color:#404040;font-size:30px;}
 
 ::selection {
