@@ -2,10 +2,4 @@ body {background-color: #f2f1ed; width: 600px; margin:auto; margin-top:80px;font
 ul {list-style: circle;padding: 0 15px;}
 ol {padding: 0 15px;}
 p {white-space: pre-wrap;} 
-a {
-color: #404040;}
-
-a:hover {
-color: #5e5e5e;
-}
-h2 {color:#404040;font-size:30px;}
+a {text-decoration:none}
