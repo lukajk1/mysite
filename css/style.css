@@ -1,4 +1,5 @@
-body {background-color:#f2f1ed; width:600px; margin:auto; margin-top:80px;font-family: sans-serif;font-size:15px;background-image: url("../img/tile3.png");color:#4d4d4d;}
+body {background-color:#f2f1ed; width:600px; margin:auto; margin-top:80px;font-size:15px;
+  font-family: sans-serif;background-image: url("../img/tile3.png");color:#4d4d4d;}
 ul {list-style-type:square;padding: 0 25px;}
 ol {padding: 0 25px;}
 li {padding:3px 0;}
@@ -15,3 +16,8 @@ details {line-height:1.45;}
 ::-webkit-scrollbar-track {background:#f5f1e9;}
 ::-webkit-scrollbar-thumb {background:#888;}
 ::-webkit-scrollbar-thumb:hover {background:#555;}
+
+@font-face {
+  font-family: "win95";
+  src: url(../img/W95FA.otf);
+}
