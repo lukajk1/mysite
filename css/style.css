@@ -9,7 +9,7 @@ a:hover{color:#6FAA7D}
 h2 {font-size:37px;user-select:none;}
 details {line-height:1.45;}
 #home:hover{margin-left:8px;}
-
+#blog-img{width:100%;margin-top:20px;}
 ::selection {background: #6FAA7D;color: #f2f1ed;}
 
 ::-webkit-scrollbar {width: 8px;}
