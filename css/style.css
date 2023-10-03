@@ -1,17 +1,17 @@
-body {background-color:#f2f1ed; width:600px; margin:auto; margin-top:80px;font-size:15px;
-  font-family: sans-serif;background-image: url("../img/tile3.png");color:#4d4d4d;}
-ul {list-style-type:square;padding: 0 25px;}
-ol {padding: 0 25px;}
+body {background-color:#f2f1ed; width:600px; margin:auto; margin-top:120px;font-size:15px;
+  font-family: Helvetica, sans-serif;background-image: url("../img/tile3.png");color:#4d4d4d;}
+ul, ol {padding: 0 25px;}
 li {padding:3px 0;}
 p {white-space: pre-wrap;line-height:1.45;} 
 a {color: #4d4d4d;}
-a:hover{color:#6FAA7D}
-h2 {font-size:37px;user-select:none;}
+a:hover{color:#ababab}
+h2 {font-size:24px;user-select:none;}
 details {line-height:1.45;}
-#home:hover{margin-left:8px;}
+#home {width:20px;}
 #blog-img{width:100%;margin-top:20px;}
-::selection {background: #6FAA7D;color: #f2f1ed;}
+#back-to-top {white-space: nowrap;}
 
+::selection {background: #454545;color: #f2f1ed;}
 ::-webkit-scrollbar {width: 8px;}
 ::-webkit-scrollbar-track {background:#f5f1e9;}
 ::-webkit-scrollbar-thumb {background:#888;}

@@ -11,37 +11,44 @@
     	<link rel='stylesheet' href='css/style.css'>
 
 	<style>
-		body {margin-top:20vh;width:600px;user-select:none;}
+		body {margin-top: 30vh;user-select: none;}
 		a {
-			font-size: 37px;
-			font-weight: bold;
-			padding-bottom: 15px;
-			margin:none;
 			text-decoration:none;
-			color:#555555;
 		}
-		ul {list-style-type: none;padding:0;}
-li {padding:0;}
+        a:hover {
+			color:#555555;
+            text-decoration: underline;
+        }
+		ul {list-style-type: none;padding: 0;}
+        li {
+            font-weight: 600;
+            padding-bottom: 5px;
+			font-size: 20px;
+        }
 		i {color: #5e5e5e;font-size: 14px;}
-a:hover {margin-left:8px;}
-		img {position:relative;right:50px;}
+        .row {display: flex;}
+        .column {flex: 50%;}
 	</style>
 </head>
 <body>
 
-
-<img src='img/enderman_crop.png' height='200px' draggable='false' title='keep your cursor to yourself please'>
-
-<ul>
-	<li><a href ='about.html'>about</a></li>
-	<li><a href ='writing.html'>blog</a></li>
-	<li><a href='art.html'>art</a></li>
-	<li><a href='projects.html'>games</a></li>
-	<li><a href='links.html'>links</a></li>
-	<!--<li><a href='links.html'>itch<span style='font-size:28px;'>&#129149;</span></a></li>-->
-</ul>
-<br>
+<div class='row'>
+  <div class='column'>
+      <img src='img/25.png' height='300px' draggable='false'>
+  </div>
+  <div class='column' style='padding-top:30px;' style=''>
+    <ul>
+        <li>[ <a href ='about.html'>about</a> ]</li>
+        <li>[ <a href ='writing.html'>writing</a> ]</li>
+        <li>[ <a href='art.html'>art</a> ]</li>
+        <li>[ <a href='projects.html'>games</a> ]</li>
+        <li>[ <a href='links.html'>links</a> ]</li>
+        <li>[ <a href='etc.html'>etc</a> ]</li>
+    </ul>
 <i>est. mar 2023</i>
+  </div>
+</div>
+    
 <br>
 </body>
 </html>
