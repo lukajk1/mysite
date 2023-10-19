@@ -11,7 +11,7 @@
     	<link rel='stylesheet' href='css/style.css'>
 
 	<style>
-		body {margin-top: 30vh;user-select: none;}
+		body {user-select: none;}
 		a {
 			text-decoration:none;
 		}
@@ -21,31 +21,51 @@
         }
 		ul {list-style-type: none;padding: 0;}
         li {
-            font-weight: 600;
+            font-weight: 500;
             padding-bottom: 3px;
-			font-size: 20px;
+			font-size: 19px;
         }
 		i {color: #5e5e5e;font-size: 14px;}
-        .row {display: flex;}
-        .column {flex: 50%;}
+        .row {
+            margin-top: 25vh;
+            display: flex;
+            width: 550px;
+        }
+        .column {
+            padding:15px;
+        }
+        #splash {
+            width:100%;
+        }
+        #links {
+            float: left;
+        }
+        @media (pointer:none), (pointer:coarse) {
+            .row{width:80vw;}
+            li {font-size:4vh;}
+            i {font-size:2vh;}
+        }
+
 	</style>
 </head>
 <body>
 
 <div class='row'>
-  <div class='column'>
+  <div class='column' id='splash'><!--
       <img src='img/25.png' height='300px' draggable='false'>
+      <img src='img/photos/11.jpg' height='350px' draggable='false' style='border:1px black solid;'>-->
+      <img src='img/art/32.jpg' draggable='false' style='border:1px black solid;' id='splash'>
   </div>
-  <div class='column' style='padding-top:30px;' style=''>
+  <div class='column' id='links'>
     <ul>
         <li><a href ='about.html'>bio</a></li>
         <li><a href='art.html'>art</a></li>
-        <li><a href ='writing.html'>writing</a></li>
-        <li><a href ='photos.html'>photos</a></li>
-        <!--<li>[ <a href='art.html'>music</a> ]</li>-->
-        <li><a href='projects.html'>games</a></li>
+        <li><a href='blog.html'>blog</a></li>
+        <li><a href ='writing.html'>essays</a></li>
+        <li id='photos'><a href ='photos.html'>photos</a></li>
+        <!--<li><a href='art.html'>music</a></li>-->
+        <li><a href='games.html'>games</a></li>
         <li><a href='etc.html'>etc</a></li>
-        <li><a href='links.html'>links</a></li>
     </ul>
 <i><a href='https://neocities.org/site/lukajk'>neocities profile</a></i><br>
 <i>est. 3.23</i>

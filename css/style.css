@@ -1,6 +1,7 @@
-body {background-color:#f2f1ed; width:600px; margin:auto; margin-top:120px;font-size:15px;
-  font-family: Helvetica, sans-serif;background-image: url("../img/tile3.png");color:#4d4d4d;}
+body {background-color:#eeeeee; width:600px; margin:auto; margin-top:120px;font-size:15px;
+  font-family: Helvetica, sans-serif;color:#4d4d4d;}
 ul, ol {padding: 0 25px;}
+ul {list-style-type:circle;}
 li {padding:3px 0;}
 p {white-space: pre-wrap;line-height:1.45;} 
 a {color: #4d4d4d;}
@@ -8,7 +9,7 @@ a:hover{color:#ababab}
 h2 {font-size:24px;user-select:none;}
 details {line-height:1.45;}
 #home {width:20px;}
-#blog-img{width:100%;margin-top:20px;}
+.blog-img{width:100%;margin-top:20px;border:1px solid black;}
 #back-to-top {white-space: nowrap;}
 
 ::selection {background: #454545;color: #f2f1ed;}
@@ -16,6 +17,11 @@ details {line-height:1.45;}
 ::-webkit-scrollbar-track {background:#f5f1e9;}
 ::-webkit-scrollbar-thumb {background:#888;}
 ::-webkit-scrollbar-thumb:hover {background:#555;}
+
+@media (pointer:none), (pointer:coarse) {
+    body{width:93vw;}
+    #home {height:1vh;width:1vh;}
+}
 
 @font-face {
   font-family: "win95";
