@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>lukajk</title>
+    <link rel='stylesheet' href='css/style.css'>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!--<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>-->
+    <style>
+        body {width: revert;}
+        p {white-space: revert;}
+        
+        #header {
+            width: 600px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        
+        #header p {
+            white-space: pre-wrap;
+        }
+        
+        #main-content-body {
+            background-color: #e2e2e2;
+            margin: auto;
+            width: 90vw;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 60px 15px;
+            justify-content: space-evenly;
+        }
+        
+        .piece-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .piece-description {
+            width: 300px;
+        }
+        
+        .blog-img {
+            width: revert; /* overwrite default rules */
+            margin: revert;
+            height: 500px;
+            width: auto;
+        }
+        /*img:hover {cursor: pointer;}*/
+        #carousel {
+            position: fixed;
+            /* apparently this is how you make an element fullscreen idk */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.75);
+            z-index: 1;
+            display:none;
+        }
+        #carousel p {color:white;}
+        
+        /*
+        #main-content-body {border: 1px solid red;}
+        .piece-description {border: 1px solid green;}
+        .piece-container {border: 1px solid blue;}
+        */
+    </style>
+</head>
+<body>
+<div id='header'>
+    <a href='index.html'><img id='home' src='img/icon graphic.png'></a>
+    <h2>photos</h2>
+
+<p>I originally took these as notes of cool looking things rather than 'art'. I've tried to make them more interesting by recropping though.
+    
+I used square cropping where I could in order to use them for music covers if I ever get around to that.
+    
+taken with whichever smartphone I owned at the time</p>
+</div>
+    
+<div id='main-content-body'>
+    
+    <div class='piece-container'>    
+        <img src='img/photos/11.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>nov. 2021</p>
+        </div>
+    </div>
+
+    <div class='piece-container'>
+        <div class='img-container'>
+            <img src='img/photos/1.jpg' class='blog-img'>
+            <div class='piece-description'>
+                <p>aug. 2020</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='piece-container'>  
+        <img src='img/photos/14.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>jun. 2022</p>
+        </div>
+     </div>   
+    
+    <div class='piece-container'>  
+        <img src='img/photos/8_600h.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>aug. 2021</p>
+        </div>
+    </div>
+    
+    <div class='piece-container'>  
+        <img src='img/photos/7.png' class='blog-img'>
+        <div class='piece-description'>
+            <p>jul. 2021</p>
+        </div>
+    </div>
+    
+    <div class='piece-container'> 
+        <img src='img/photos/2.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>aug. 2020</p>
+        </div>
+    </div>
+    
+    <div class='piece-container'>  
+        <img src='img/photos/16.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>aug. 2022</p>
+        </div>
+    </div>
+    
+    <div class='piece-container'> 
+        <img src='img/photos/18.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>aug. 2020<br>
+something random I took out of a car window hence the blur. It worked to interesting effect coincidentally </p>
+        </div>
+    </div>
+    
+    <div class='piece-container'> 
+        <img src='img/photos/3_600h.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>aug. 2020</p>
+        </div>
+    </div>
+	
+    <div class='piece-container'> 
+        <img src='img/photos/10.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>nov. 2021</p>
+        </div>
+    </div>
+	
+    <div class='piece-container'> 
+        <img src='img/photos/4.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>sept. 2020</p>
+        </div>
+    </div>
+	
+    <div class='piece-container'> 
+        <img src='img/photos/13.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>apr. 2022</p>
+        </div>
+    </div>
+    
+    <div class='piece-container'> 
+        <img src='img/photos/15.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>aug. 2022</p>
+        </div>
+    </div>
+    
+    <div class='piece-container'> 
+        <img src='img/photos/17.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <p>jul. 2014</p>
+        </div>
+    </div>
+</div>
+    
+<div id='carousel'>
+    <div id='close' onclick='closeCarousel()'></div>
+    <img id='display' src='#'>
+    <center>
+        <p>arrow keys to navigate | escape to close</p>
+        <p id='num'>x / y</p>
+    </center>
+</div>
+
+</body>
+</html>

@@ -6,7 +6,7 @@ li {padding:3px 0;}
 p {white-space: pre-wrap;line-height:1.45;} 
 a {color: #4d4d4d;}
 a:hover{color:#ababab}
-h2 {font-size:24px;user-select:none;}
+h2 {font-size:24px;user-select:none;font-weight: 400;}
 details {line-height:1.45;}
 #home {width:20px;}
 .blog-img{width:100%;margin-top:20px;border:1px solid black;}
