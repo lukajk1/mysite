@@ -8,7 +8,7 @@
     <!--<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>-->
     <style>
         body {width: revert;}
-        p {white-space: revert;}
+        p {white-space: normal;}
         
         #header {
             width: 600px;
@@ -16,9 +16,7 @@
             margin-bottom: 30px;
         }
         
-        #header p {
-            white-space: pre-wrap;
-        }
+        #header p {white-space: pre-line;}
         
         #main-content-body {
             background-color: #e2e2e2;
@@ -28,27 +26,26 @@
             flex-direction: row;
             gap: 30px;
             flex-wrap: wrap;
-            padding: 60px 15px;
+            padding: 10px 15px;
             justify-content: space-evenly;
+        }
+
+        .piece-container img {
+			max-height: 500px;
         }
         
         .piece-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+			position: relative;
+            display: inline-block;
+			margin-bottom: 60px;
         }
-        
+
         .piece-description {
-            width: 300px;
+			position: absolute;
+			max-width: 100%;
         }
-        
-        .blog-img {
-            width: revert; /* overwrite default rules */
-            margin: revert;
-            height: 500px;
-            width: auto;
-        }
-        /*img:hover {cursor: pointer;}*/
+
+	   /*img:hover {cursor: pointer;}*/
         #carousel {
             position: fixed;
             /* apparently this is how you make an element fullscreen idk */

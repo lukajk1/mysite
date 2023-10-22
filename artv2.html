@@ -24,27 +24,26 @@
             flex-direction: row;
             gap: 30px;
             flex-wrap: wrap;
-            padding: 60px 15px;
+            padding: 10px 15px;
             justify-content: space-evenly;
+        }
+
+        .piece-container img {
+			max-height: 500px;
         }
         
         .piece-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+			position: relative;
+            display: inline-block;
+			margin-bottom: 100px;
         }
-        
+
         .piece-description {
-            width: 300px;
+			position: absolute;
+			max-width: 100%;
         }
-        
-        .blog-img {
-            width: revert; /* overwrite default rules */
-            margin: revert;
-            height: 500px;
-            width: auto;
-        }
-        /*img:hover {cursor: pointer;}*/
+
+	   /*img:hover {cursor: pointer;}*/
         #carousel {
             position: fixed;
             /* apparently this is how you make an element fullscreen idk */
@@ -85,13 +84,11 @@
     </div>
 
     <div class='piece-container'>
-        <div class='img-container'>
-            <img src='img/art/32.jpg' class='blog-img'>
-            <div class='piece-description'>
-                <p>oct. 2023<br>
-                Going through something of a phase. Or maybe it's here to stay? Either way it's a big change from the style I used for years</p>
-            </div>
-        </div>
+		<img src='img/art/32.jpg' class='blog-img'>
+		<div class='piece-description'>
+			<p>oct. 2023<br>
+			Going through something of a phase. Or maybe it's here to stay? Either way it's a big change from the style I used for years</p>
+		</div>
     </div>
 
     <div class='piece-container'>  
@@ -131,13 +128,6 @@
             <p>feb. 2022<br></p>
         </div>
     </div>
-	
-    <div class='piece-container'> 
-        <img src='img/art/-319.png' class='blog-img'>
-        <div class='piece-description'>
-            <p>nov. 2022<br></p>
-        </div>
-    </div>
     
     <div class='piece-container'> 
         <img src='img/art/481%20eva02%201.png' class='blog-img'>
@@ -165,6 +155,13 @@
         <img src='img/art/-290.png' class='blog-img'>
         <div class='piece-description'>
             <p>june 2022<br></p>
+        </div>
+    </div>
+	
+    <div class='piece-container'> 
+        <img src='img/art/-319.png' class='blog-img'>
+        <div class='piece-description'>
+            <p>nov. 2022<br></p>
         </div>
     </div>
     

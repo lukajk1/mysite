@@ -7,42 +7,118 @@
     
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <style>
-        img {height:200px;padding-top:30px;}
-        #home {height:20px;padding:0;}//stupid but whatever
-        audio {position: fixed; right:50px;}
+        body {width: revert;}
+        p {white-space: normal;}
+        
+        #header {
+            width: 600px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        
+        #main-content-body {
+            background-color: #e2e2e2;
+            margin: auto;
+            width: 990px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 60px 0px 60px 30px;
+        }
+        
+        .piece-container {
+        }
+        
+        .piece-description {
+            width: 300px;
+        }
+        
+        .blog-img {
+            width: revert; /* overwrite default rules */
+            margin: 0;
+            height: 300px;
+            margin-bottom: 15px;
+        }
+        /*
+        #main-content-body {border: 1px solid red;}
+        .piece-description {border: 1px solid green;}
+        .piece-container {border: 1px solid blue;}
+*/
     </style>
 </head>
 <body>
-<a href='index.html'><img id='home' src='img/icon graphic.png' height='20px'></a>
-<h2>music</h2>
+<div id='header'>
+    <a href='index.html'><img id='home' src='img/icon graphic.png' height='20px'></a>
+    <h2>music</h2>
 
-<p>music and stuff. also check it out on my <a href='#'>youtube channel</a>. </p><br>
+    <p>music is what I've been occupying myself with creatively recently. Also check it out on my <a href='#'>youtube channel</a>.</p>
+</div>
+    
+<div id='main-content-body'>
 
-<img src='img/photos/1.jpg' style='padding:0;'>
-<audio controls loop>
-<source src="https://files.catbox.moe/0vzkna.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio><br>
-song description   
-<br>
+    <div class='piece-container'>  
+        <img src='img/art/32.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <audio controls>
+                <source src="https://files.catbox.moe/0vzkna.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio>
+            <p>nov. 2021<br>
+            Some more description or whatever. Writing more text so that this line wraps at least once more to see what happens when it does.</p>
+        </div>
+     </div>
     
-<img src='img/photos/2.jpg'>
-<audio controls loop>
-<source src="https://files.catbox.moe/0vzkna.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio><br>
-song description  
-<br>
+    <div class='piece-container'>  
+        <img src='img/photos/1.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <audio controls>
+                <source src="https://files.catbox.moe/0vzkna.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio>
+            <p>nov. 2021<br>
+            Some more description or whatever. Writing more text so that this line wraps at least once more to see what happens when it does.</p>
+        </div>
+     </div>
     
-<img src='img/art/32.jpg'>
-<audio controls loop>
-<source src="https://files.catbox.moe/0vzkna.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio><br>
-oct. 2023 <br>
-song description  
-<br>
+    <div class='piece-container'>  
+        <img src='img/photos/1.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <audio controls>
+                <source src="https://files.catbox.moe/0vzkna.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio>
+            <p>nov. 2021<br>
+            Some more description or whatever. Writing more text so that this line wraps at least once more to see what happens when it does.</p>
+        </div>
+     </div>
     
-<br><br>
+    <div class='piece-container'>  
+        <img src='img/photos/1.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <audio controls>
+                <source src="https://files.catbox.moe/0vzkna.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio>
+            <p>nov. 2021<br>
+            Some more description or whatever. Writing more text so that this line wraps at least once more to see what happens when it does.</p>
+        </div>
+     </div>
+    
+    <div class='piece-container'>  
+        <img src='img/photos/1.jpg' class='blog-img'>
+        <div class='piece-description'>
+            <audio controls>
+                <source src="https://files.catbox.moe/0vzkna.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio>
+            <p>nov. 2021<br>
+            Some more description or whatever. Writing more text so that this line wraps at least once more to see what happens when it does.</p>
+        </div>
+     </div>
+    
+    
+
+</div>
 </body>
 </html>
