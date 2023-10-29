@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>lukajk</title>
+    <link rel='stylesheet' href='css/style.css'>
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!--<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>-->
+    <style>
+        body {width: revert;
+            padding-bottom: 70px;}
+        p {white-space: normal;}
+        
+        #header {
+            width: 600px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        
+        #header p {
+            white-space: pre-line;
+        }
+        
+        #main-content-body {
+            background-color: #e2e2e2;
+            margin: auto;
+            width: 90vw;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 10px 15px 30px 15px;
+            justify-content: space-evenly;
+        }
+
+        .piece-container img {
+			max-height: 500px;
+        }
+        
+        .piece-container {
+			position: relative;
+            display: inline-block;
+			margin-bottom: 80px;
+        }
+
+        .piece-description {
+			position: absolute;
+			max-width: 100%;
+        }
+
+	   /*img:hover {cursor: pointer;}*/
+        #carousel {
+            position: fixed;
+            /* apparently this is how you make an element fullscreen idk */
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.75);
+            z-index: 1;
+            display:none;
+        }
+        #carousel p {color:white;}
+        
+        /*
+        #main-content-body {border: 1px solid red;}
+        .piece-description {border: 1px solid green;}
+        .piece-container {border: 1px solid blue;}
+        */
+    </style>
+</head>
+<body>
+<div id='header'>
+    <a href='index.html'><img id='home' src='img/icon graphic.png'></a>
+    <h2>graphics</h2>
+
+    <p>graphic design is my passion x d
+    
+    buttons I've designed: </p>
+    <img src='img/buttons/mleko1.png'>
+</div>
+    
+<div id='main-content-body'>
+  
+    <div class='piece-container'>    
+        <img src='img/art/40.png' class='blog-img'>
+        <div class='piece-description'>
+            <p>oct. 2023<br>
+            "vibe"
+            </p>
+        </div>
+    </div>
+
+    
+    <div class='piece-container'>    
+        <img src='img/art/39.png' class='blog-img'>
+        <div class='piece-description'>
+            <p>oct. 2023<br>
+            Go for maximum return in art (above work not related). I like the colors though
+            </p>
+        </div>
+    </div>
+    
+    <div class='piece-container'>    
+        <img src='img/art/554.png' class='blog-img'>
+        <div class='piece-description'>
+            <p>feb. 2023<br>
+            "Red Angel"   
+            </p>
+        </div>
+    </div>
+    
+
+    
+</div>
+    <center><p style='margin-top:30px;'><a href='#top'>back to top</a></p></center>
+
+
+</body>
+</html>
