@@ -6,7 +6,7 @@ li {padding:3px 0;}
 p {white-space: pre-wrap;line-height:1.45;} 
 a {color: #4d4d4d;}
 a:hover{color:#ababab}
-h2 {font-size:24px;user-select:none;font-weight: 400;}
+h2 {font-size:20px;user-select:none;font-weight: 400;}
 details {line-height:1.45;}
 #home {width:20px;}
 .blog-img{width:100%;margin-top:20px;border:1px solid black;}
@@ -25,12 +25,9 @@ details {line-height:1.45;}
 ::-webkit-scrollbar-thumb {background:#888;}
 ::-webkit-scrollbar-thumb:hover {background:#555;}
 
+/*
 @media (pointer:none), (pointer:coarse) {
     body{width:93vw;}
     #home {height:1vh;width:1vh;}
 }
-
-@font-face {
-  font-family: "win95";
-  src: url(../img/W95FA.otf);
-}
+*/

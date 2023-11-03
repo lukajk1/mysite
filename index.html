@@ -40,6 +40,21 @@
         music-img {
             margin-top: 20px;
         }
+        h2 {
+            margin-bottom: 0;
+        }
+        i {
+            font-size: 14px;
+        }
+        summary:hover {
+            cursor: pointer;
+        }
+        details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
         /*
         #main-content-body {border: 1px solid red;}
         .piece-description {border: 1px solid green;}
@@ -50,11 +65,12 @@
 <body>
     
     <div id='nav-wrapper'>
-        <ul id='nav'>
-            <h2>lukajk</h2>
-            <!--<li><i style='font-size:14px;'>lukajk001[at]gmail</i></li>-->
+        <ul id='nav' style='user-select: none;'>
+            <h2 style='font-size: 22px;'>lukajk</h2>
+            
             <br>
-            <li><a href ='about.html'>bio</a></li>
+            
+            <!--<li><a href ='about.html'>bio</a></li>-->
             <li><a href='artv2.html'>art</a></li>
             <li id='photos'><a href ='photosv2.html'>photos</a></li>
             <li><a href='music.html'>music</a></li>
@@ -63,8 +79,16 @@
             <li style='color: #a2a2a2;'>games</li>
             <!--<li style='color: #a2a2a2;'><a href ='games.html'>games</a></li>-->
             <li><a href='etc.html'>etc</a></li>
+            
+
             <br>
-            <li><a href='https://neocities.org/site/lukajk'>profile</a></li>
+            <details>
+                <summary style='user-select: none;'>contact &nbsp;<span style='font-size:12px;'>ᐁ</span></summary>
+                
+                <i style='user-select: all;'>lukajk001[at]gmail.com</i>
+                    <br>
+                <i><a href='https://neocities.org/site/lukajk' style='text-decoration: underline;'>neocities profile</a></i>
+            </details>
             <!--<li><a href='#'>youtube</a></li>-->
         </ul>
     </div>
@@ -136,7 +160,7 @@ something of a phase</p>
 const collection = document.getElementsByTagName('audio');
     
 for (let i = 0; i < collection.length; i++) {
-  collection[i].volume = 0.5;
+  collection[i].volume = 0.4;
 }
 </script>
 </body>
