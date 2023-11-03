@@ -1,77 +1,143 @@
-
 <!doctype html>
 <html lang='en'>
 <head>
-   	<meta charset='utf-8'>
-	<meta name='description' content="luka's website">
-	<meta name='author' content='luka kawashima'>
-
-   	<title>lukajk</title>
+    <meta charset='utf-8'>
+	<title>lukajk</title>
+    <link rel='stylesheet' href='css/style.css'>
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    	<link rel='stylesheet' href='css/style.css'>
-
-	<style>
-		body {user-select: none;}
-		a {
-			text-decoration:none;
-		}
-        a:hover {
-			color:#555555;
-            text-decoration: underline;
+    <style>
+        audio {   
+            padding-top: 10px;
+            filter: contrast(65%) invert(100%);
+            height: 26px;
         }
-		ul {list-style-type: none;padding: 0;}
-        li {
-            font-weight: 500;
-            padding-bottom: 3px;
-			font-size: 19px;
+        #nav {
+            position: fixed;
+            font-size: 16px;
+            list-style-type: none;
         }
-		i {color: #5e5e5e;font-size: 14px;}
-        .row {
-            margin-top: 18vh;
-            display: flex;
-            width: 550px;
+        
+        #nav a {
+            text-decoration: none;
         }
-        .column {
-            padding:15px;
+        
+        #nav-wrapper {
+            position: relative;
+            right: 220px;
+            top: -8px;
         }
-        #splash {
-            width:100%;
-            border:1px black solid;
+        #pages li {
+            display: inline;
+            list-style-type: none;
+            
         }
-        #links {
-            float: left;
+        hr {
+            margin-bottom: 35px;
         }
-        @media (pointer:none), (pointer:coarse) {
-            .row{width:80vw;}
-            li {font-size:4vh;}
-            i {font-size:2vh;}
+        #main-content-body {
+            margin-bottom: 130px;
         }
-
-	</style>
+        music-img {
+            margin-top: 20px;
+        }
+        /*
+        #main-content-body {border: 1px solid red;}
+        .piece-description {border: 1px solid green;}
+        .piece-container {border: 1px solid blue;}
+*/
+    </style>
 </head>
 <body>
+    
+    <div id='nav-wrapper'>
+        <ul id='nav'>
+            <h2>lukajk</h2>
+            <!--<li><i style='font-size:14px;'>lukajk001[at]gmail</i></li>-->
+            <br>
+            <li><a href ='about.html'>bio</a></li>
+            <li><a href='artv2.html'>art</a></li>
+            <li id='photos'><a href ='photosv2.html'>photos</a></li>
+            <li><a href='music.html'>music</a></li>
+            <li><a href='blog.html'>blog</a></li>
+            <li><a href ='writing.html'>essays</a></li>
+            <li style='color: #a2a2a2;'>games</li>
+            <!--<li style='color: #a2a2a2;'><a href ='games.html'>games</a></li>-->
+            <li><a href='etc.html'>etc</a></li>
+            <br>
+            <li><a href='https://neocities.org/site/lukajk'>profile</a></li>
+            <!--<li><a href='#'>youtube</a></li>-->
+        </ul>
+    </div>
+    
+<br><br>
 
-<div class='row'>
-  <div class='column'>
-      <img src='img/art/45.jpg' draggable='false' id='splash'>
-  </div>
-  <div class='column' id='links'>
-    <ul>
-        <li><a href ='about.html'>bio</a></li>
-        <li><a href='artv2.html'>art</a></li>
-        <li id='photos'><a href ='photosv2.html'>photos</a></li>
-        <li><a href='music.html'>music</a></li>
-        <li><a href='blog.html'>blog</a></li>
-        <li><a href ='writing.html'>essays</a></li>
-        <li><a href ='games.html'>games</a></li>
-        <!--<li><a href='graphics.html'>graphics</a></li>-->
-        <li><a href='etc.html'>etc</a></li>
-    </ul>
-      <hr>
-<i><a href='https://neocities.org/site/lukajk'>neocities profile</a></i><br><br>
-<i>est. 3.23</i>
-  </div>
+<div id='main-content-body'> <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+
+       
+    
+     <div class='piece-container'>  
+        <img src='img/art/45.jpg' class='music-img' loading='lazy'>
+        <div class='piece-description'>
+            <audio controls controlsList='noplaybackrate' preload="metadata">
+                <source src="https://dl.sndup.net/bvq5/5-2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            <p>oct. 2023 - 5
+                
+I kind of like this one</p>
+        </div>
+     </div>    
+<hr>
+    
+
+
+
+    <div class='piece-container'>    
+        <img src='img/art/40.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+<p>oct. 2023<br>
+"vibe" xd</p>
+        </div>
+    </div>
+<hr>     
+    
+    <div class='piece-container'>
+		<img src='img/art/32.jpg' class='blog-img' loading='lazy'>
+		<div class='piece-description'>
+<p>oct. 2023<br>
+something of a phase</p>
+		</div>
+    </div>
+    <hr>
+        
+    <div class='piece-container'>    
+        <img src='img/art/554.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+<p>feb. 2023<br>
+"Red Angel"   
+            </p>
+        </div>
+    </div>
+    
+<hr>
+    <!--
+    <center>
+    <ul id='pages'>
+        <li><a href='#'>1</a></li>
+        <li><a href='#'>2</a></li>
+        <li><a href='#'>3</a></li>
+        <li><a href='#'>4</a></li>
+    </ul></center>   
+-->
 </div>
-<br>
+    
+<script>
+const collection = document.getElementsByTagName('audio');
+    
+for (let i = 0; i < collection.length; i++) {
+  collection[i].volume = 0.5;
+}
+</script>
 </body>
 </html>

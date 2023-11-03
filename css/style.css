@@ -12,6 +12,13 @@ details {line-height:1.45;}
 .blog-img{width:100%;margin-top:20px;border:1px solid black;}
 #back-to-top {white-space: nowrap;}
 
+.music-img {
+    margin: 0;
+    height: 300px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+
 ::selection {background: #454545;color: #f2f1ed;}
 ::-webkit-scrollbar {width: 8px;}
 ::-webkit-scrollbar-track {background:#f5f1e9;}
