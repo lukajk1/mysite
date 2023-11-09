@@ -7,8 +7,12 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <!--<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>-->
     <style>
-        body {width: revert;}
-        p {white-space: normal;}
+        body {width: revert;
+            padding-bottom: 70px;}
+        #main-content-body p {
+            white-space: normal;
+            margin:0;
+        }
         
         #header {
             width: 600px;
@@ -16,28 +20,26 @@
             margin-bottom: 30px;
         }
         
-        #header p {white-space: pre-line;}
-        
         #main-content-body {
-            background-color: #e2e2e2;
             margin: auto;
-            width: 90vw;
             display: flex;
             flex-direction: row;
-            gap: 30px;
+            gap: 15px;
             flex-wrap: wrap;
-            padding: 10px 15px;
-            justify-content: space-evenly;
+            padding: 30px 55px 30px 55px;
+            justify-content: center;
         }
 
         .piece-container img {
 			max-height: 500px;
+            padding: 0;
+            margin: 0;
         }
         
         .piece-container {
 			position: relative;
             display: inline-block;
-			margin-bottom: 60px;
+			margin-bottom: 40px;
         }
 
         .piece-description {
@@ -70,7 +72,6 @@
 <div id='header'>
     <h2><a href='index.html'>lukajk</a> / photos</h2><br>
 
-<p>taken with whichever smartphone I owned at the time</p>
 </div>
     
 <div id='main-content-body'>
@@ -129,8 +130,7 @@
     <div class='piece-container'> 
         <img src='img/photos/18.jpg' class='blog-img' loading='lazy'>
         <div class='piece-description'>
-            <p>aug. 2020<br>
-something random I took out of a car window hence the blur. It worked to interesting effect coincidentally </p>
+            <p>aug. 2020<br></p>
         </div>
     </div>
     
