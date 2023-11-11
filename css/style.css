@@ -34,12 +34,12 @@ details {line-height:1.45;}
     margin-bottom: 5px;
     border: 1px solid black;
 }
-
+/*
 ::selection {background: #454545;color: #f2f1ed;}
 ::-webkit-scrollbar {width: 8px;}
 ::-webkit-scrollbar-track {background:#f5f1e9;}
 ::-webkit-scrollbar-thumb {background:#888;}
-::-webkit-scrollbar-thumb:hover {background:#555;}
+::-webkit-scrollbar-thumb:hover {background:#555;}*/
 
 /*
 @media (pointer:none), (pointer:coarse) {
