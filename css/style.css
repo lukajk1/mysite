@@ -1,49 +1,14 @@
 body {
     width:600px; 
     margin:auto; 
-    margin-top:80px;
-    font-size:16px;
+    margin-top:50px;
     color:#4d4d4d;
 }
 
-ul {
-    list-style-type: circle;
-}
-
-li {padding:3px 0;}
-
 p {white-space: pre-wrap;line-height:1.45;}
-
-h2 {
-    font-size:22px;
-    user-select:none;
-    font-weight: 600;
-}
-
 details {line-height:1.45;}
+li {padding: 2px 0;}
 
-#back-to-top {white-space: nowrap;}
-
-.blog-img{width:100%;margin-top:20px;border:1px solid black;}
-
-.game-img img{border: 1px solid black;}
-.music-img {
-    margin: 0;
-    height: 300px;
-    margin-bottom: 5px;
-    border: 1px solid black;
-}
-/*
-::selection {background: #454545;color: #f2f1ed;}
-::-webkit-scrollbar {width: 8px;}
-::-webkit-scrollbar-track {background:#f5f1e9;}
-::-webkit-scrollbar-thumb {background:#888;}
-::-webkit-scrollbar-thumb:hover {background:#555;}*/
-
-/*
-@media (pointer:none), (pointer:coarse) {
-    body{width:93vw;}
-    #home {height:1vh;width:1vh;}
-}
-
-*/
+img {border:1px solid #4d4d4d;}
+.blog-img{width:100%;margin-top:20px;}
+.music-img {height: 300px;}

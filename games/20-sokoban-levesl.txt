@@ -1,0 +1,19 @@
+20 sokoban levels 
+designed by lukajk
+
+these levels can be played in any standard sokoban 
+engine including my 'cowboy sokoban'. 
+
+simply copy this entire text to the clipboard > 
+'load from clipboard' in cowboy sokoban
+::::::::::::::::::::::::::::::::
+
+title: 01 
+
+######
+# .  ##
+# @#$ #
+#     #
+## #$##
+ #.  #
+ #####
