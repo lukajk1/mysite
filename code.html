@@ -10,8 +10,23 @@
 <h2><a href='index.html'>lukajk</a> / code</h2><br><hr>
 
 <p>
-javascript: (() => { x = String(window.location.href);y = x.replaceAll("https://", "");z = y.split('/')[0];a = z.replaceAll(".neocities.org", "");b = "https://neocities.org/site/" + a;window.location = b;})();    
+<u><strong>11.23 | "site to neocities profile" bookmarklet</strong></u>
+    
+A bookmarklet looks like a regular bookmark but runs javascript on the current page when clicked rather than taking you to a new one. This bookmarklet reorders urls like <u>example.neocities.org/randompage</u> to <u>neocities.org/site/example</u> when pressed. 
+
+<u>to use:</u>
+- make a new bookmark of any page
+- right click it > edit, then replace the url field with the following code:
 </p>
 
+<div style='background-color: #ebebeb;padding:10px;user-select: all;'>
+    <code>
+    javascript: (() => {
+        window.location = 'https://neocities.org/site/' + window.location.hostname.split('.')[0];
+    })();    
+    </code>
+</div>
+<p>you can change the title of the bookmark to anything--it has no bearing on functionality.</p>
+    
 </body>
 </html>
