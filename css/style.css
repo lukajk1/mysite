@@ -4,12 +4,13 @@ body {
     margin-top:50px;
     color:#4d4d4d;
     font-family: "Comic Sans MS", "Comic Sans";
+    background-color: white;
 }
-
 p {white-space: pre-wrap;line-height:1.45;}
 details {line-height:1.45;}
 li {padding: 2px 0;}
-
-img {border:1px solid #4d4d4d;}
+/**/
+img {border:1px solid #4d4d4d;
+border-radius: 10px;}
 .blog-img{width:100%;margin-top:20px;}
 .music-img {height: 300px;}
