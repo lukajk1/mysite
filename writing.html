@@ -2,22 +2,143 @@
 <html lang='en'>
 <head>
     <meta charset='utf-8'>
-	<title>lukajk | words</title>
+    <title>lukajk | words</title>
     <link rel='stylesheet' href='css/style.css'>
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <style>
+        audio {   
+            padding-top: 10px;
+            filter: contrast(65%) invert(100%);
+            height: 26px;
+        }
+        
+        body {
+            width: revert;
+            padding-bottom: 70px;
+        }
+        #nav li {
+            display: inline;
+            padding-right: 7px;
+        }
+        #main-content-body p {
+            white-space: pre-line;
+            margin:0;
+        }
+        
+        #header {
+            width: 600px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        
+        #main-content-body {
+            gap: 15px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 15px 30px;
+            justify-content: flex-start;
+        }
+        
+        .text-content {
+            max-height: 250px;
+            overflow-y: hidden;
+            width: 320px;
+            margin: 0;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .text-article {  /* if it aint broke dont fix it */
+            max-height: 250px;
+            overflow-y: hidden;
+            width: 320px;
+            margin: 0;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .text-article::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30%;
+            background: linear-gradient(to bottom, transparent, white);
+        }
+/*
+        #main-content-body {border: 1px solid red;}
+        .piece-description {border: 1px solid green;}
+        .text-container {border: 1px solid blue;}
+        */
+    </style>
 </head>
 <body>
+<div id='header'>
 <h2><a href='index.html'>lukajk</a> / words</h2>
+    
 
-    <img src='img/writing/writing.png' class='blog-img'>
+</div>
+    
+<div id='main-content-body'>
 
     
-    <ul>
-        <li><a href='writing/art-theory.html'>art theory</a></li>
-        <br><!--
-		<li><a href='writing/personal-artistic.html'>11.23 - personal artistic views and goals</a></li>-->
-		<li><a href='writing/probably-effective-language.html'>03.23 - (probably) effective language learning</a></li>
-	</ul><br>
+    <div class='text-container'>
+        <div class='text-content'>
+        <p>People with custom linux setups are the internet equivalent of car people</p>
+        </div>
+        <p>11.23</p>
+    </div>       
+    
+    <div class='text-container'>
+        <div class='text-content'>
+        <p>I don't think having a better "big picture" understanding of any sort of art or design activity really makes you any better at it. Someone should have told me that like, 4 years ago.</p>
+        </div>
+        <p>11.23</p>
+    </div>    
+    
+    <div class='text-container'>
+        <div class='text-content'>
+        <p>autistic art tends to have a </p>
+        </div>
+        <p>11.23</p>
+    </div>
+    
+    <div class='text-container'>
+        <div class='text-content'>
+        <p>a community of 1 - --purely hypothetically, of course.</p>
+        </div>
+        <p>11.23</p>
+    </div>
+    
+    <div class='text-container'>
+            <div class='text-article'>
+        <p>Art is whatever people say it is. Someone can get caught up in their own ideas and state it as though the entirety of it should be viewed from that perspective. To say nothing about whether they are necessarily right or not, regardless of how strongly someone insists art should or shouldn't be seen others will have their own opinions. 
+
+As David Hume put it: "The difference, it is said, is very wide between judgement and sentiment. All sentiment is right; because sentiment has a reference to nothing beyond itself, and is always real, wherever a man is conscious of it." In other words, if someone is getting something out of a work of art, that "sentiment" is present self-evidently, no matter how substantiated or not their feeling is.</p>
+        </div>
+    <p>11.23 | <a href='writing/art-theory.html'>art theory</a></p>
+    </div>
+    
+    <div class='text-container'>
+        <div class='text-article'>
+        <p>There's certainly no shortage of options for learning languages, but I've come to the view that straightforward is better. I believe a comfortable reading level of ~9th grade can be achieved solely through YA texts and a dictionary. I use Calibre's inline tool. 
+
+I began with the theory that grammatical rules can be intuited to a large degree, based on anecdotal accounts as well as the fact that when we learn our native language we aren't taught them explicitly. I intended to learn from a premade anki deck of common words for the first 500-1k and then to start reading with that base, but out of the ones I tried the terms weren't always a good match to the body of words I would need to know for YA. So instead I started reading Magic Treehouse and making my own flashcards as I went. I chose that series for its level of difficulty, being more complex than first readers and a transition to chapter books.</p>
+        </div>
+    <p>03.23 | <a href='writing/probably-effective-language.html'>(probably) effective language learning</a></p>
+    </div>
+
+         
+
+    <!-- ||||||||||||||||||||||||-->
+</div>
+<!--<center><p style='margin-top:30px;'><a href='#top'>back to top</a></p></center>-->
 
 </body>
 </html>

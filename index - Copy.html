@@ -18,7 +18,7 @@
         }
         #nav li {
             display: inline;
-            padding-right: 7px;
+            padding: 0 3.5px;
         }
         .music-img {
             height: revert;
@@ -27,20 +27,22 @@
             white-space: pre-line;
             margin:0;
         }
-        
+        #main-content-body {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
         #header {
             margin-bottom: 30px;
         }
         
-        #main-content-body {
+        #content-column {
             gap: 15px;
             margin: auto;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-direction: column;
             padding: 20px 0;
-            justify-content: flex-start;
-            max-width: 1085px;
+            width: 350px;
         }
 
         .piece-container img {
@@ -93,7 +95,7 @@
             height: 30%;
             background: linear-gradient(to bottom, transparent, white);
         }
-/*
+
         #main-content-body {border: 1px solid red;}
         #header {border: 1px solid red;}
         .piece-description {border: 1px solid green;}
@@ -122,8 +124,8 @@
     </div>
     
 </div></center>
-    
-<div id='main-content-body'>
+    <div id='main-content-body'>
+<div id='content-column'>
 
     <div class='piece-container'>
          <div class='game-img'>
@@ -133,6 +135,7 @@
 
         </div>
      </div>    
+    
     <div class='piece-container'>    
         <img src='img/art/686.png' class='blog-img' loading='lazy'>
         <div class='piece-description'>
@@ -173,7 +176,27 @@
 
 
     
-    <div class='piece-container'>
+
+
+    
+    <div class='piece-container'>    
+        <img src='img/photos/10.jpg' class='blog-img' loading='lazy'>
+
+    </div>   
+    
+    <div class='piece-container'>    
+        <img src='img/art/40.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+
+        </div>
+    </div>
+         
+
+    <!-- ||||||||||||||||||||||||-->
+</div>
+    
+    <div id='content-column'>
+        <div class='piece-container'>
         <div class='img-container'>
             <img src='img/photos/1.jpg' class='blog-img' loading='lazy'>
             <div class='piece-description'>
@@ -227,24 +250,9 @@ As David Hume put it: "The difference, it is said, is very wide between judgemen
     <div class='piece-container'>    
         <img src='img/art/-290.png' class='blog-img' loading='lazy'>
 
-    </div>
-
-    
-    <div class='piece-container'>    
-        <img src='img/photos/10.jpg' class='blog-img' loading='lazy'>
-
-    </div>   
-    
-    <div class='piece-container'>    
-        <img src='img/art/40.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-
-        </div>
-    </div>
-         
-
-    <!-- ||||||||||||||||||||||||-->
+    </div></div>
 </div>
+    
 <center><p style='margin-top:30px;'><a href='#top'>back to top</a></p></center>
 <script>
 const collection = document.getElementsByTagName('audio');
