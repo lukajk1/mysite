@@ -3,14 +3,9 @@ body {
     margin:auto; 
     margin-top:50px;
     color:#4d4d4d;
-    font-family: "Comic Sans MS", "Comic Sans";
-    background-color: white;
+    /*font-family: "Comic Sans MS", "Comic Sans";*/
 }
+
 p {white-space: pre-wrap;line-height:1.45;}
-details {line-height:1.45;}
-li {padding: 2px 0;}
-/**/
-img {border:1px solid #4d4d4d;
-border-radius: 10px;}
+img {border:1px solid #4d4d4d; border-radius: 5px;}
 .blog-img{width:100%;margin-top:20px;}
-.music-img {height: 300px;}

@@ -18,7 +18,7 @@
         }
         #nav li {
             display: inline;
-            padding: 0 3.5px;
+            padding-right: 7px;
         }
         .music-img {
             height: revert;
@@ -27,22 +27,20 @@
             white-space: pre-line;
             margin:0;
         }
-        #main-content-body {
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-        }
+        
         #header {
             margin-bottom: 30px;
         }
         
-        #content-column {
+        #main-content-body {
             gap: 15px;
             margin: auto;
             display: flex;
-            flex-direction: column;
-            padding: 20px 0;
-            width: 350px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /*padding: 10px 0;*/
+            justify-content: flex-start;
+            max-width: 1085px;
         }
 
         .piece-container img {
@@ -94,8 +92,8 @@
             right: 0;
             height: 30%;
             background: linear-gradient(to bottom, transparent, white);
-        }
-
+        }        
+/*
         #main-content-body {border: 1px solid red;}
         #header {border: 1px solid red;}
         .piece-description {border: 1px solid green;}
@@ -118,14 +116,13 @@
             <li><a href='art.html'>art</a></li>
             <li><a href='music.html'>music</a></li>
             <li><a href ='games.html'>games</a></li>
-            <li><a href ='writing.html'>words</a></li>
             <li><a href ='code.html'>code</a></li>
         </ul>
     </div>
     
 </div></center>
-    <div id='main-content-body'>
-<div id='content-column'>
+    
+<div id='main-content-body'>
 
     <div class='piece-container'>
          <div class='game-img'>
@@ -135,7 +132,6 @@
 
         </div>
      </div>    
-    
     <div class='piece-container'>    
         <img src='img/art/686.png' class='blog-img' loading='lazy'>
         <div class='piece-description'>
@@ -147,14 +143,6 @@
         <div class='piece-description'>
         </div>
     </div> 
-
-<!--
-    <div class='piece-container'>    
-        <img src='img/art/675.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-
-        </div>
-    </div>  -->
 
      <div class='piece-container'>  
         <img src='img/art/45.jpg' class='music-img' loading='lazy'>
@@ -173,58 +161,6 @@
 
         </div>
     </div>  
-
-
-    
-
-
-    
-    <div class='piece-container'>    
-        <img src='img/photos/10.jpg' class='blog-img' loading='lazy'>
-
-    </div>   
-    
-    <div class='piece-container'>    
-        <img src='img/art/40.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-
-        </div>
-    </div>
-         
-
-    <!-- ||||||||||||||||||||||||-->
-</div>
-    
-    <div id='content-column'>
-        <div class='piece-container'>
-        <div class='img-container'>
-            <img src='img/photos/1.jpg' class='blog-img' loading='lazy'>
-            <div class='piece-description'>
-
-            </div>
-        </div>
-    </div>
-
-
-        <!--
-     <div class='piece-container'>  
-        <img src='img/music/end.png' class='music-img' loading='lazy'>
-        <div class='piece-description'>
-            <audio controls controlsList='noplaybackrate'>
-                <source src="https://dl.sndup.net/gczk/4%203.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-
-        </div>
-     </div>-->   <!--
-    <div class='text-container'>
-        <div class='text-content'>
-        <p>Art is whatever people say it is. Someone can get caught up in their own ideas and state it as though the entirety of it should be viewed from that perspective. To say nothing about whether they are necessarily right or not, regardless of how strongly someone insists art should or shouldn't be seen others will have their own opinions. 
-
-As David Hume put it: "The difference, it is said, is very wide between judgement and sentiment. All sentiment is right; because sentiment has a reference to nothing beyond itself, and is always real, wherever a man is conscious of it." In other words, if someone is getting something out of a work of art, that "sentiment" is present self-evidently, no matter how substantiated or not their feeling is.</p>
-        </div>
-    <p><a href='writing/art-theory.html'>art theory</a></p>
-    </div>-->
     
     <div class='piece-container'>
 		<img src='img/art/32.jpg' class='blog-img' loading='lazy'>
@@ -250,9 +186,19 @@ As David Hume put it: "The difference, it is said, is very wide between judgemen
     <div class='piece-container'>    
         <img src='img/art/-290.png' class='blog-img' loading='lazy'>
 
-    </div></div>
-</div>
+    </div>
+
     
+    <div class='piece-container'>    
+        <img src='img/art/40.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+
+        </div>
+    </div>
+         
+
+    <!-- ||||||||||||||||||||||||-->
+</div>
 <center><p style='margin-top:30px;'><a href='#top'>back to top</a></p></center>
 <script>
 const collection = document.getElementsByTagName('audio');
