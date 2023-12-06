@@ -3,12 +3,22 @@
 <head>
     <meta charset='utf-8'>
 	<title>lukajk | about</title>
-    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/style.css'>    <style>        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .spinning {
+            display: inline-block;
+            animation: spin 3s linear infinite;
+            transform-origin: center;
+        }
+</style>
 </head>
 <body>
 <h2><a href='index.html'>lukajk</a> / about</h2>
 
-<img src='img/yuumi.jpg' style='border:revert;height:100px;'>
+<img src='img/yuumi.jpg' style='border:revert;height:100px;' class='spinning'>
     <br>
     <br>
     <br>
