@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>lukajk</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <style>
+        body { width: revert; padding-bottom: 50px; }
+        #header { user-select: none; }
+        span { position:relative; font-size: 32px;}
+        input:hover, label:hover { cursor: pointer; }
+        #checkboxes { margin-bottom: 12px; }
+        #main-content-body p {
+            white-space: pre-line;
+            margin:0;
+        }
+        #main-content-body {
+            gap: 15px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            padding: 5px 0;
+            justify-content: flex-start;
+            max-width: 1089px;
+        }
+
+        .piece-container img {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .piece-container {
+            width: 350px;
+            margin: 0;
+            padding: 0;
+			margin-bottom: 15px;
+        }
+        .piece-description {
+			max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .content-column {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+        #nav {
+            margin: 0;
+            padding: 0 0 30px 0;
+        }
+        #nav li {
+            display: inline;
+            padding: 0 3.5px;
+        }
+        label {
+            position: relative;
+            top: -2px;
+        }
+        audio {
+            position: relative;
+            padding: 3px 0;
+            left: 30px;
+            height: 26px;
+        }
+        audio::-webkit-media-controls-panel {background-color: white;}
+        /*
+        #main-content-body {border: 1px solid red;}
+        .content-column {border: 1px solid green;}
+        #header {border: 1px solid red;}
+        .piece-description {border: 1px solid green;}
+        .piece-container art {border: 1px solid blue;}
+*/
+    </style>
+</head>
+<body>
+            
+<center><div id='header'>
+        <div id='nav-wrapper'> 
+            <h2 style='margin-bottom: 5px;'>
+                <span>lukajk</span>
+            </h2>      
+            <ul id='nav'>
+                <li><a href='about.html'>about</a></li>
+                <li><a href='blog.html'>blog</a></li>
+            </ul>
+        <div id='checkboxes'>
+            <input type="checkbox" id='art' onclick="toggleVisibility('art')" checked />
+    <label for='art'>art&nbsp;&nbsp;</label>
+            <input type="checkbox" id='music' onclick="toggleVisibility('music')" checked />
+    <label for='music'>music&nbsp;&nbsp;</label>
+            <input type="checkbox" id='games' onclick="toggleVisibility('games')" checked />
+    <label for='games'>game</label>
+        </div>            
+    </div>
+    
+</div></center>
+    
+<div id='main-content-body'>
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    
+    
+    
+<div class='content-column'>    
+     
+
+    <div class='piece-container art'>  
+        <img src='img/art/20.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+            <p>8.23</p>
+        </div>
+    </div>    
+    
+    <div class='piece-container art'>    
+        <img src='img/art/481.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+            <p>8.22</p>
+        </div>
+    </div>
+    
+    <div class='piece-container art'>    
+        <img src='img/art/292.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+            <p>10.21 | 292</p>
+        </div>
+    </div> 
+
+
+    <div class='piece-container  music'>  
+        <img src='img/music/maraca-song.jpg' class='music-img' loading='lazy'>
+        <div class='piece-description'>
+            <audio controls controlsList='noplaybackrate'>
+                <source src="https://dl.sndup.net/xs3c/1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio><!--
+            <p>10.23 | maraca song</p>-->
+        </div>
+     </div>
+  
+    
+    <div class='piece-container art'> 
+        <img src='img/art/488%20school.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+            <p>9.22</p>
+        </div>
+    </div>
+    
+    <div class='piece-container art'> 
+        <img src='img/art/-290.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+            <p>6.22</p>
+        </div>
+    </div>
+
+    
+        
+</div>
+    
+    
+<div class='content-column'>
+    <!-- |||||||||||||||||||||||||||||||||||||||||||||||| -->
+    
+        <div class='piece-container art'>    
+            <img src='img/art/694.png' class='blog-img' loading='lazy'>
+            <div class='piece-description'>
+                <p>12.23 | 694</p>
+            </div>
+        </div> 
+    <!--
+        <div class='piece-container art'>    
+            <img src='img/art/686.png' class='blog-img' loading='lazy'>
+            <div class='piece-description'>
+                <p>11.23 | 686<br>
+                </p>
+            </div>
+        </div>     -->
+
+
+         <div class='piece-container music'>  
+        <img src='img/art/45.jpg' class='music-img' loading='lazy'>
+        <div class='piece-description'>
+            <audio controls controlsList='noplaybackrate' preload="metadata">
+                <source src="https://dl.sndup.net/bvq5/5-2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio><!--
+            <p>10.23 | 5</p>-->
+        </div>
+     </div>  
+   
+    <div class='piece-container art'>    
+        <img src='img/art/40.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+            <p>10.23</p>
+        </div>
+    </div>
+
+    
+    <div class='piece-container art'> 
+        <img src='img/art/617.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+            <p>5.23</p>
+        </div>
+    </div>
+
+    
+</div>
+    
+    
+<div class='content-column'>
+
+     
+    <div class='piece-container art'>    
+        <img src='img/art/554.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+            <p>2.23 | red angel</p>
+        </div>
+    </div>
+        
+        <div class='piece-container games'>
+             <div class='game-img'>
+                <img src='img/games/cowboy-sokoban.png' loading='lazy'>
+             </div>
+            <div class='piece-description'>
+                <p>11.23 | <a href='https://lukajk.itch.io/cowboy-sokoban'>cowboy sokoban - itch.io</a></p>
+            </div>
+         </div>    
+
+
+         <div class='piece-container music'>  
+        <img src='img/music/end.png' class='music-img' loading='lazy'>
+        <div class='piece-description'>
+            <audio controls controlsList='noplaybackrate'>
+                <source src="https://dl.sndup.net/gczk/4%203.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio><!--
+            <p>10.23 | 4</p>-->
+        </div>
+     </div>
+    
+    <div class='piece-container art'>
+		<img src='img/art/32.jpg' class='blog-img' loading='lazy'>
+		<div class='piece-description'>
+			<p>10.23</div>
+    </div>
+
+    <div class='piece-container art'>  
+        <img src='img/art/marksmen.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+            <p>8.23</p>
+        </div>
+     </div>
+
+
+    
+</div>
+    
+         
+    
+    
+         
+
+    <!-- end of main-content-body |||||||||||||||||||||||||||| -->
+</div>
+<center><p style='margin-top:30px;'><a href='#top'>back to top</a></p></center>
+<script>
+const collection = document.getElementsByTagName('audio');
+    
+for (let i = 0; i < collection.length; i++) {
+  collection[i].volume = 0.4;
+}
+</script>
+    
+<script>
+document.getElementById('nav').style.display = '';
+function toggleVisibility(className) {
+    var elements = document.getElementsByClassName(className);
+    var checkbox = document.getElementById(className);
+
+    for (var i = 0; i < elements.length; i++) {
+        if (checkbox.checked) {
+            elements[i].style.display = '';
+        } else {
+            elements[i].style.display = 'none';
+        }
+    }
+}
+</script>
+</body>
+</html>
