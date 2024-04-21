@@ -5,7 +5,7 @@
     <title>lukajk</title>
     <link rel='stylesheet' href='css/style.css'>
     <style>
-        body { width: revert; padding-bottom: 50px; }
+        body { width: revert; padding-bottom: 50px; min-height: 101vh;}
         #header { user-select: none; }
         span { position:relative; font-size: 32px;}
         input:hover, label:hover { cursor: pointer; }
@@ -39,7 +39,7 @@
         
         .music {
             border:1px solid #4d4d4d; 
-            border-radius: 3px;
+            /*border-radius: 3px;*/
             margin-bottom: 10px;
         }
         
@@ -50,7 +50,7 @@
         /* yes this is stupid and I don't care */
         .games {
             border:1px solid #4d4d4d; 
-            border-radius: 3px;
+            /*border-radius: 3px;*/
             margin-bottom: 10px;
         }
         
@@ -71,7 +71,7 @@
         }
         #nav {
             margin: 0;
-            padding: 0 0 30px 0;
+            padding: 0 0 18px 0;
         }
         #nav li {
             display: inline;
@@ -88,6 +88,7 @@
             height: 26px;
         }
         audio::-webkit-media-controls-panel {background-color: white;}
+        #header { max-width: 1074px;margin:auto;margin-bottom:20px;}
         /*
         #main-content-body {border: 1px solid red;}
         .content-column {border: 1px solid green;}
@@ -99,14 +100,14 @@
 </head>
 <body>
             
-<center><div id='header'>
+<div id='header'>
         <div id='nav-wrapper'> 
-            <h2 style='margin-bottom: 5px;'>
+            <h2 style='margin-bottom: 18px;'>
                 <span>lukajk</span>
-            </h2>      
+            </h2> 
             <ul id='nav'>
-                <li><a href='about.html'>about</a></li>
-                <li><a href='blog.html'>blog</a></li>
+                <li><a href='about.html'>about</a></li>|<li><a href='updates.html'>updates</a></li>
+                <!--<li><a href='blog.html'>blog</a></li>-->
             </ul>
         <div id='checkboxes'>
             <input type="checkbox" id='art' onclick="toggleVisibility('art')" checked />
@@ -118,63 +119,29 @@
         </div>            
     </div>
     
-</div></center>
+</div>
     
 <div id='main-content-body'>
+<div class='content-column'>
     <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-    
-    
-    
-<div class='content-column'>    
-     
-
-    <div class='piece-container art'>  
-        <img src='img/art/20.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-        </div>
-    </div>    
-    
-    <div class='piece-container art'>    
-        <img src='img/art/481.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-            <!--<p>8.22</p>-->
-        </div>
-    </div>
+        
+           <div class='piece-container art'>    
+            <img src='img/art/701.png' class='blog-img' loading='lazy'>
+            <div class='piece-description'>
+            </div>
+        </div> 
     
     <div class='piece-container art'>    
         <img src='img/art/292.png' class='blog-img' loading='lazy'>
         <div class='piece-description'>
-            <!--<p>10.21 | 292</p>-->
-        </div>
-    </div> 
-
-
-    <div class='piece-container  music'>  
-        <img src='img/music/maraca-song.jpg' class='music-img' loading='lazy'>
-        <div class='piece-description'>
-            <audio controls controlsList='noplaybackrate'>
-                <source src="https://dl.sndup.net/xs3c/1.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio><!--
-            <p>10.23 | maraca song</p>-->
-        </div>
-     </div>
-  
-    
-    <div class='piece-container art'> 
-        <img src='img/art/488%20school.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-            <!--<p>9.22</p>-->
         </div>
     </div>
     
     <div class='piece-container art'> 
-        <img src='img/art/-290.png' class='blog-img' loading='lazy'>
+        <img src='img/art/617.png' class='blog-img' loading='lazy'>
         <div class='piece-description'>
-            <!--<p>6.22</p>-->
         </div>
     </div>
-
     
         
 </div>
@@ -182,48 +149,25 @@
     
 <div class='content-column'>
     <!-- |||||||||||||||||||||||||||||||||||||||||||||||| -->
-    
-        <div class='piece-container art'>    
-            <img src='img/art/694.png' class='blog-img' loading='lazy'>
-            <div class='piece-description'>
-                <!--<p>12.23 | 694</p>-->
-            </div>
-        </div> 
-    <!--
-        <div class='piece-container art'>    
-            <img src='img/art/686.png' class='blog-img' loading='lazy'>
-            <div class='piece-description'>
-                <p>11.23 | 686<br>
-                </p>
-            </div>
-        </div>     -->
+
+    <div class='piece-container art'>    
+        <img src='img/art/554.png' class='blog-img' loading='lazy'>
+        <div class='piece-description'>
+        </div>
+    </div>
 
 
          <div class='piece-container music'>  
-        <img src='img/art/45.jpg' class='music-img' loading='lazy'>
+        <img src='img/music/end.png' class='music-img' loading='lazy'>
         <div class='piece-description'>
-            <audio controls controlsList='noplaybackrate' preload="metadata">
-                <source src="https://dl.sndup.net/bvq5/5-2.mp3" type="audio/mpeg">
+            <audio controls controlsList='noplaybackrate'>
+                <source src="https://dl.sndup.net/gczk/4%203.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
-            </audio><!--
-            <p>10.23 | 5</p>-->
+            </audio>
         </div>
-     </div>  
-   
-    <div class='piece-container art'>    
-        <img src='img/art/40.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-            <!--<p>10.23</p>-->
-        </div>
-    </div>
+     </div>
 
-    
-    <div class='piece-container art'> 
-        <img src='img/art/617.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-            <!--<p>5.23</p>-->
-        </div>
-    </div>
+
 
     
 </div>
@@ -232,10 +176,11 @@
 <div class='content-column'>
 
      
-    <div class='piece-container art'>    
-        <img src='img/art/554.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-            <!--<p>2.23 | red angel</p>-->
+
+    
+    <div class='piece-container art'>
+		<img src='img/art/32.jpg' class='blog-img' loading='lazy'>
+		<div class='piece-description'>
         </div>
     </div>
         
@@ -251,29 +196,14 @@
 
 
          <div class='piece-container music'>  
-        <img src='img/music/end.png' class='music-img' loading='lazy'>
+        <img src='img/art/45.jpg' class='music-img' loading='lazy'>
         <div class='piece-description'>
-            <audio controls controlsList='noplaybackrate'>
-                <source src="https://dl.sndup.net/gczk/4%203.mp3" type="audio/mpeg">
+            <audio controls controlsList='noplaybackrate' preload="metadata">
+                <source src="https://dl.sndup.net/bvq5/5-2.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
-            </audio><!--
-            <p>10.23 | 4</p>-->
+            </audio>
         </div>
-     </div>
-    
-    <div class='piece-container art'>
-		<img src='img/art/32.jpg' class='blog-img' loading='lazy'>
-		<div class='piece-description'>
-            <!--<p>10.23</p>-->
-        </div>
-    </div>
-
-    <div class='piece-container art'>  
-        <img src='img/art/marksmen.png' class='blog-img' loading='lazy'>
-        <div class='piece-description'>
-            <!--<p>8.23</p>-->
-        </div>
-     </div>
+     </div>  
 
 
     
