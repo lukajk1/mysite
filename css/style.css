@@ -3,7 +3,8 @@ body {
     max-width: 1074px;
     margin:auto; 
     margin-top:50px;
-    /*color:#4d4d4d;*/
+    /*color:#4d4d4d;
+background-color: black;*/
 }
 
 p {white-space: pre-wrap;line-height:1.45;}
