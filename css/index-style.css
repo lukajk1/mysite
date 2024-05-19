@@ -1,0 +1,95 @@
+body {
+    width: revert;
+    padding-bottom: 50px;
+    min-height: 101vh;
+}
+span {
+    position: relative;
+    font-size: 32px;
+}
+input:hover, label:hover {
+    cursor: pointer;
+}
+#checkboxes {
+    margin-bottom: 12px;
+}
+#main-content-body p,
+#main-content-body-date p {
+    white-space: pre-line;
+    margin: 0;
+}
+#main-content-body,
+#main-content-body-date {
+    gap: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    justify-content: flex-start;
+    max-width: 1074px;
+}
+.piece-container img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.piece-container {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.music,
+.games {
+    border: 1px solid #4d4d4d;
+    margin-bottom: 10px;
+}
+.music img,
+.games img {
+    border: revert;
+    border-bottom: 1px solid #4d4d4d;
+}
+.piece-description {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.content-column {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+#nav {
+    margin: 0;
+    padding: 0 0 18px 0;
+}
+#nav li {
+    display: inline;
+    padding: 0 3.5px;
+}
+label {
+    position: relative;
+    top: -2px;
+}
+audio {
+    position: relative;
+    padding: 3px 0;
+    left: 30px;
+    height: 26px;
+}
+audio::-webkit-media-controls-panel {
+    background-color: white;
+}
+#header {
+    max-width: 1074px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#radio {
+    float: right;
+    position: relative;
+    bottom: 29px;
+}
+.content {
+    display: none;
+}
