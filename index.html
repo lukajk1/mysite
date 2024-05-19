@@ -9,12 +9,12 @@
 <body>
     <div id='header'>
         <div id='nav-wrapper'>
-            <h2 style='margin-bottom: 18px;'>
+            <center><h2 style='margin-bottom: 18px;'>
                 <span>lukajk</span>
             </h2>
             <ul id='nav'>
                 <li><a href='about.html'>about</a></li>|<li><a href='updates.html'>updates</a></li>
-            </ul>
+            </ul></center>
             <div id='checkboxes'>
                 <input type="checkbox" id='art' onclick="toggleVisibility('art')" checked />
                 <label for='art'>art&nbsp;&nbsp;</label>
@@ -173,8 +173,6 @@
     <center><p style='margin-top:30px;'><a href='#top'>back to top</a></p></center>
 
     <script>
-        document.getElementById('nav').style.display = '';
-
         function toggleVisibility(className) {
             var elements = document.getElementsByClassName(className);
             var checkbox = document.getElementById(className);
