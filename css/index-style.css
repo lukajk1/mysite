@@ -3,16 +3,8 @@ body {
     padding-bottom: 50px;
     min-height: 101vh;
 }
-span {
-    position: relative;
-    font-size: 32px;
-}
-input:hover, label:hover {
-    cursor: pointer;
-}
-#checkboxes {
-    margin-bottom: 12px;
-}
+span {font-size: 30px;}
+input:hover, label:hover {cursor: pointer;}
 #main-content-body p,
 #main-content-body-date p {
     white-space: pre-line;
@@ -24,20 +16,17 @@ input:hover, label:hover {
     margin: auto;
     display: flex;
     flex-direction: row;
-    padding: 5px 0;
     justify-content: flex-start;
     max-width: 1074px;
-}
-.piece-container img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
 }
 .piece-container {
     width: 350px;
     margin: 0;
     padding: 0;
     margin-bottom: 5px;
+}
+.piece-container img {
+    width: 100%;
 }
 .music,
 .games {
@@ -49,11 +38,6 @@ input:hover, label:hover {
     border: revert;
     border-bottom: 1px solid #4d4d4d;
 }
-.piece-description {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-}
 .content-column {
     width: 350px;
     display: flex;
@@ -61,7 +45,7 @@ input:hover, label:hover {
 }
 #nav {
     margin: 0;
-    padding: 0 0 18px 0;
+    padding: 0;
 }
 #nav li {
     display: inline;
@@ -83,16 +67,10 @@ audio::-webkit-media-controls-panel {
 #header {
     max-width: 1069px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 #radio {
     float: right;
     position: relative;
-    bottom: 29px;
-}
-.content {
-    display: none;
-}
-#main-content-date {
-    display: none;
+    bottom: 20px;
 }
