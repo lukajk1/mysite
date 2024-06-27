@@ -73,3 +73,8 @@ audio::-webkit-media-controls-panel {
     position: relative;
     bottom: 20px;
 }
+
+#checkboxes,
+#radio {
+    display: none;
+}
