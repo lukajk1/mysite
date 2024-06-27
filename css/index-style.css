@@ -1,7 +1,8 @@
 body {
     width: revert;
     padding-bottom: 50px;
-    min-height: 101vh;
+    min-height: 101vh; 
+    margin-top:50px;
 }
 input:hover, label:hover {cursor: pointer;}
 #main-content-body p,
@@ -46,10 +47,6 @@ input:hover, label:hover {cursor: pointer;}
     margin: 0;
     padding: 0;
 }
-#nav li {
-    display: inline;
-    padding: 0 3.5px;
-}
 label {
     position: relative;
     top: -2px;
@@ -68,13 +65,16 @@ audio::-webkit-media-controls-panel {
     margin: auto;
     margin-bottom: 12px;
 }
-#radio {
-    float: right;
-    position: relative;
-    bottom: 20px;
+
+#nav-wrapper h1, #nav-wrapper ul {
+    display: inline-block;
+    vertical-align: middle; /* Aligns the middle of the elements */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
-#checkboxes,
-#radio {
-    display: none;
+#nav li {
+    display: inline;
+    padding: 0 3.5px;
 }
+
