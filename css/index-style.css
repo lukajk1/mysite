@@ -3,7 +3,6 @@ body {
     padding-bottom: 50px;
     min-height: 101vh;
 }
-span {font-size: 30px;}
 input:hover, label:hover {cursor: pointer;}
 #main-content-body p,
 #main-content-body-date p {
