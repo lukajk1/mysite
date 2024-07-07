@@ -3,10 +3,22 @@
 <head>
     <meta charset='utf-8'>
 	<title>lukajk</title>
+    <link rel='icon' type='image/x-icon' href='img/favicon.ico'>
     <link rel='stylesheet' href='css/style.css'>    
     <style>
+        body {
+            max-width: 94vw;
+        }
         img {
             max-height: 600px;
+            margin:0;
+            padding:0;
+        }
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 10px;
         }
     </style>
 </head>
@@ -14,35 +26,16 @@
 <br>
 <h1><a href='index.html'>lukajk</a> / art</h1>
 <br>
-    <p>see more on <a href='#'>artstation,</a> <a href='#'>instagram,</a> or <a href='#'>twitter</a></p>
-            
-            <div class='piece-container art'>
-                <img src='img/art/748%20chroma%20corp.png' class='blog-img'>
-            </div>
-            
-            
-            <div class='piece-container art'>
-                <img src='img/art/693.png' class='blog-img'>
-            </div>
-            <div class='piece-container art'>
-                <img src='img/art/701.png' class='blog-img'>
-            </div>
-            
-            
-            <div class='piece-container art'>
-                <img src='img/art/744.png' class='blog-img'>
-                <div class='piece-description'></div>
-            </div>
-            
-            <div class='piece-container art'>
-                <img src='img/art/554.png' class='blog-img'>
-                <div class='piece-description'></div>
-            </div>
-            
-    
-            <div class='piece-container art'>
-                <img src='img/art/32.jpg' class='blog-img'>
-            </div>
+    <p>see more on <a href='https://www.artstation.com/lukajk'>artstation,</a> <a href='https://www.instagram.com/lukajk9/'>instagram,</a> or <a href='https://twitter.com/lukajk9'>twitter</a></p>
+        
+    <div id='gallery'>
+        <img src='img/art/748%20chroma%20corp.png'>
+        <img src='img/art/693.png'>
+        <img src='img/art/701.png'>
+        <img src='img/art/744.png'>
+        <img src='img/art/554.png'>
+        <img src='img/art/32.jpg'>
+    </div>
             
             
 
