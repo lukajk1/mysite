@@ -17,14 +17,47 @@
             flex-wrap: wrap;
             flex-direction: row;
             gap: 10px;
-        }
+        }            
+        img:hover {cursor: pointer;}
+            #carousel {
+                position: fixed;
+                /* apparently this is how you make an element fullscreen idk */
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.75);
+                z-index: 1;
+                display:none;
+            }
+            #carousel img{
+                display:block;
+                margin:auto;
+                margin-top: 3vh;
+                margin-bottom: 3vh;
+                cursor: default;
+                max-height:85vh;  
+                -webkit-user-select: none; /* Safari */
+                -ms-user-select: none; /* IE 10 and IE 11 */
+                user-select: none; /* Standard syntax */
+            }
+            #carousel p {color:white;}
+            #carousel-controls {
+                position: fixed;
+                bottom: 1vh;
+                left: 0;
+                right: 0; 
+                text-align: center;
+                z-index: 10;      
+                font-size: 16px;
+            }
     </style>
 </head>
 <body>
 <br>
 <h1><a href='index.html'>lukajk</a> / art</h1>
 <br>
-    <p>see more on <a href='https://www.artstation.com/lukajk'>artstation,</a> <a href='https://www.instagram.com/lukajk9/'>instagram,</a> or <a href='https://twitter.com/lukajk9'>twitter</a></p>
+    <p>see more on <a href='https://www.artstation.com/lukajk'>artstation,</a> <a href='https://www.instagram.com/lukajk9/'>instagram,</a> or <a href='https://twitter.com/lukajk9'>twitter</a>.</p>
         
     <div id='gallery'>
         <img src='img/art/748%20chroma%20corp.png'>
@@ -36,6 +69,89 @@
     </div>
             
             
+        <div id='carousel'>
+            <div id='close' onclick='closeCarousel()'></div>
+            <img id='display' src='#'>
+            <div id='carousel-controls'>
+                <center>
+                    <p>&larr; &rarr; prev/next, esc or click out to close</p>
+                    <p id='num'>x / y</p>
+                </center>
+            </div>
+        </div>        
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
+<script>
+    var imgSrc, imgList, imgId;
+
+    $(document).ready(function(){
+        $('img').click(function(){
+            imgSrc = this.getAttribute('src');
+            imgList = document.getElementById('gallery').getElementsByTagName('img');
+
+            document.getElementById('display').setAttribute('src', imgSrc);
+            document.getElementById('carousel').style.display = 'initial';
+
+            for (let i = 0; i < imgList.length; i++) {
+                if (imgList[i].getAttribute('src') === imgSrc){
+                    imgId = i;
+                    break;
+                }
+            }
+
+            document.getElementById('num').innerHTML = imgId + 1 + ' / ' + imgList.length;
+        });
+
+        // Adding click event to the carousel to close if the clicked area is not the image or specific elements
+        $('#carousel').click(function(event) {
+            if (event.target.id === 'carousel' || event.target.id === 'close') {
+                closeCarousel();
+            }
+        });
+    });
+
+    function setImage(id){
+        if(id > imgList.length - 1) {
+            imgId = 0;
+        }
+        else if (id < 0) {
+            imgId = imgList.length - 1;
+        }
+
+        var src = imgList[imgId].getAttribute('src');
+        document.getElementById('display').setAttribute('src', src);
+
+        document.getElementById('num').innerHTML = imgId + 1 + ' / ' + imgList.length;
+
+    }
+
+    function changeImg(iterator) {
+        imgId += iterator;
+        setImage(imgId);
+    }
+
+    function closeCarousel() {
+        document.getElementById('carousel').style.display= 'none';
+    }
+
+    document.onkeydown = function(e) {
+        switch(e.which) {
+            case 37: // left arrow
+                changeImg(-1);
+                break;
+
+            case 39: // right arrow
+                changeImg(1);
+                break;
+
+            case 27: // escape key
+                closeCarousel();
+                break;
+
+            default: return; // exit this handler for other keys
+        }
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+    };
+</script>
 
 </body>
 </html>
