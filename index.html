@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang='en'>
 <head>
@@ -10,31 +11,14 @@
 <body>
     <div id='header'>
         <div id='nav-wrapper'>
-            <center>
-            <h1 style='margin-bottom: 7px;'>lukajk
-            </h1>
-                
-            </center>
-            <center>
+            <h1 style='margin-bottom: 7px; margin-right: 7px;'>lukajk</h1>
             <ul id='nav'>
-                <li><a href='about.html'>about</a></li>|<li><a href='updates.html'>updates</a></li>
+                <li><a href='about.html'>about</a></li>
+                /
+                <!--<li><a href='updates.html'>updates</a></li>
+                /-->
+                <li><a href='https://twitter.com/lukajk9'>twitter</a></li>
             </ul>
-            </center>
-            <div id='checkboxes'>
-                <input type="checkbox" id='art' onclick="toggleVisibility('art')" checked />
-                <label for='art'>art&nbsp;&nbsp;</label>
-                <input type="checkbox" id='music' onclick="toggleVisibility('music')" checked />
-                <label for='music'>music&nbsp;&nbsp;</label>
-                <input type="checkbox" id='games' onclick="toggleVisibility('games')" checked />
-                <label for='games'>game</label>
-            </div>
-            <div id='radio'>
-                <label>arrange:</label>
-                <input type="radio" id="toggle1" name="toggle" value="main-content-body" onclick="toggleDivs()" checked>
-                <label for="toggle1">default&nbsp;</label>
-                <input type="radio" id="toggle2" name="toggle" value="main-content-body-date" onclick="toggleDivs()">
-                <label for="toggle2">recent first  </label>
-            </div>
         </div>
     </div>
 
@@ -43,10 +27,19 @@
             
             
             <div class='piece-container art'>
-                <img src='img/art/741.png' class='blog-img' loading='lazy'>
+                <img src='img/art/748%20chroma%20corp.png' class='blog-img' loading='lazy'>
                 <div class='piece-description'></div>
             </div>
             
+            
+            <div class='piece-container art'>
+                <img src='img/art/693.png' class='blog-img' loading='lazy'>
+                <div class='piece-description'></div>
+            </div>
+            <div class='piece-container art'>
+                <img src='img/art/701.png' class='blog-img' loading='lazy'>
+                <div class='piece-description'></div>
+            </div>
             <div class='piece-container music'>
                 <img src='img/music/5.png' class='music-img' loading='lazy'>
                 <div class='piece-description'>
@@ -55,17 +48,21 @@
                         Your browser does not support the audio element.
                     </audio>
                 </div>
-            </div>
-            
-            <div class='piece-container art'>
-                <img src='img/art/701.png' class='blog-img' loading='lazy'>
-                <div class='piece-description'></div>
             </div>
             
             
         </div>
         
         <div class='content-column'>
+            <div class='piece-container art'>
+                <img src='img/art/744.png' class='blog-img' loading='lazy'>
+                <div class='piece-description'></div>
+            </div>
+            <!--
+            <div class='piece-container art'>
+                <img src='img/art/745.png' class='blog-img' loading='lazy'>
+                <div class='piece-description'></div>
+            </div>-->
             
             <div class='piece-container art'>
                 <img src='img/art/554.png' class='blog-img' loading='lazy'>
@@ -88,53 +85,6 @@
                 <img src='img/art/32.jpg' class='blog-img' loading='lazy'>
                 <div class='piece-description'></div>
             </div>
-            <div class='piece-container games'>
-                <div class='game-img'>
-                    <img src='img/games/shape-rotator.png' loading='lazy'>
-                </div>
-                <div class='piece-description'>
-                    <center>
-                        <p style='margin-bottom: 10px;'><a href='https://lukajk.itch.io/shape-rotator'>shape rotator</a></p>
-                    </center>
-                </div>
-            </div>
-            
-            <div class='piece-container games'>
-                <div class='game-img'>
-                    <img src='img/games/cowboy-sokoban.png' loading='lazy'>
-                </div>
-                <div class='piece-description'>
-                    <center>
-                        <p style='margin-bottom: 10px;'><a href='https://lukajk.itch.io/cowboy-sokoban'>cowboy sokoban</a></p>
-                    </center>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-    <div id='main-content-body-date' class="content" style='display: none;'>
-        <div class='content-column'>
-            
-            
-            <div class='piece-container art'>
-                <img src='img/art/701.png' class='blog-img' loading='lazy'>
-                <div class='piece-description'></div>
-            </div>
-            
-            <div class='piece-container music'>
-                <img src='img/music/end.png' class='music-img' loading='lazy'>
-                <div class='piece-description'>
-                    <audio controls controlsList='noplaybackrate'>
-                        <source src="https://dl.sndup.net/gczk/4%203.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
-            
-        </div>
-        <div class='content-column'>
-            
             
             <div class='piece-container art'>
                 <img src='img/art/741.png' class='blog-img' loading='lazy'>
@@ -143,6 +93,17 @@
             
             <div class='piece-container games'>
                 <div class='game-img'>
+                    <img src='img/games/shape-rotator.png' loading='lazy'>
+                </div>
+                <div class='piece-description'>
+                    <center>
+                        <p style='margin-bottom: 10px;'><a href='https://lukajk.itch.io/shape-rotator'>shape rotator</a></p>
+                    </center>
+                </div>
+            </div>
+            
+            <div class='piece-container games'>
+                <div class='game-img'>
                     <img src='img/games/cowboy-sokoban.png' loading='lazy'>
                 </div>
                 <div class='piece-description'>
@@ -153,84 +114,10 @@
             </div>
             
             
-            
-            <div class='piece-container art'>
-                <img src='img/art/32.jpg' class='blog-img' loading='lazy'>
-            </div>
-            
-            
-            
-        </div>
-        <div class='content-column'>
-            
-            
-            <div class='piece-container games'>
-                <div class='game-img'>
-                    <img src='img/games/shape-rotator.png' loading='lazy'>
-                </div>
-                <div class='piece-description'>
-                    <center>
-                        <p style='margin-bottom: 10px;'><a href='https://lukajk.itch.io/shape-rotator'>shape rotator</a></p>
-                    </center>
-                </div>
-            </div>
-            
-            
-            
-            <div class='piece-container music'>
-                <img src='img/music/5.png' class='music-img' loading='lazy'>
-                <div class='piece-description'>
-                    <audio controls controlsList='noplaybackrate' preload="metadata">
-                        <source src="https://dl.sndup.net/bvq5/5-2.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </div>
-            
-            <div class='piece-container art'>
-                <img src='img/art/554.png' class='blog-img' loading='lazy'>
-                <div class='piece-description'></div>
-            </div>
-            
         </div>
     </div>
 
     <center><p style='margin-top:30px;'><a href='#top'>back to top</a></p></center>
 
-    <script>
-        function toggleVisibility(className) {
-            var elements = document.getElementsByClassName(className);
-            var checkbox = document.getElementById(className);
-
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].style.display = checkbox.checked ? '' : 'none';
-            }
-        }
-
-        function toggleDivs() {
-            var div1 = document.getElementById('main-content-body');
-            var div2 = document.getElementById('main-content-body-date');
-            var selectedValue = document.querySelector('input[name="toggle"]:checked').value;
-
-            if (selectedValue === 'main-content-body') {
-                div1.style.display = 'flex';
-                div2.style.display = 'none';
-            } else {
-                div1.style.display = 'none';
-                div2.style.display = 'flex';
-            }
-        }
-
-        // Initialize the correct div based on the default radio button selection
-        window.onload = toggleDivs;
-
-        // Set volume for all audio elements
-        window.addEventListener('DOMContentLoaded', (event) => {
-            const collection = document.getElementsByTagName('audio');
-            for (let i = 0; i < collection.length; i++) {
-                collection[i].volume = 0.4;
-            }
-        });
-    </script>
 </body>
 </html>

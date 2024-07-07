@@ -1,7 +1,6 @@
 body {
     max-width: 1074px;
-    margin:auto; 
-    margin-top:50px;
+    margin: auto; 
 }
 p {white-space: pre-wrap;line-height:1.45;}
 img {border:1px solid black;}
