@@ -10,6 +10,11 @@ img {border:1px solid black;}
 
 a {
     color: #555;
+  transition: 0.15s;
+}
+a:hover {
+    background-color: #555;
+    color: white;
 }
 
 ::selection {
