@@ -28,10 +28,10 @@ a {
     transition: 0.2s;
 }
 
-    a:hover {
-        background-color: #f0f0f0;
-        color: #303030;
-    }
+a:hover {
+    background-color: #f0f0f0;
+    color: #303030;
+}
 
 ::selection {
     color: #303030;
@@ -50,6 +50,6 @@ a {
     background: #888;
 }
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
